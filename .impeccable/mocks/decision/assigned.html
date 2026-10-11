@@ -1,0 +1,104 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15181a;--face:#1f3a2e;--back:#3f6b52;--paper:#ecede4;--paper2:#e2e4d8;--rule:#c7cabb;--red:#b3261e;--blue:#2b4c9a;--trail:#8a5a00}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--paper);color:var(--ink);font:16px/1.5 "Public Sans",sans-serif;font-variant-numeric:tabular-nums}
+header{height:72px;background:var(--face);color:#eef1e8;display:grid;grid-template-columns:340px 1fr 380px;align-items:center;padding:0 28px;position:relative;overflow:hidden}
+header svg.band{position:absolute;inset:0;opacity:.18}
+.mark{font:600 30px/1 Cinzel,serif;letter-spacing:.12em;position:relative}
+.mark small{display:block;font:500 11px/1.4 "Public Sans";letter-spacing:.16em;opacity:.8;margin-top:4px}
+.status{position:relative;font-size:13px;display:flex;gap:18px;justify-content:center;opacity:.92}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7fd19b;margin-right:6px}
+.serialh{position:relative;text-align:right;font:600 13px "Public Sans";letter-spacing:.14em;color:#d9c48a}
+main{display:grid;grid-template-columns:340px 1fr 380px;height:828px}
+aside{border-right:1px solid var(--rule);padding:22px 24px;overflow:hidden}
+h2{font:600 12px "Public Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--face);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{border:1px solid var(--rule);padding:6px 10px;font-size:13px;font-weight:600;background:#f4f5ee}
+.chip.on{background:var(--face);color:#eef1e8;border-color:var(--face)}
+.f{display:grid;grid-template-columns:62px 1fr;border-top:1px solid var(--rule);padding:8px 0;font-size:14px}
+.f b{font:600 11px "Public Sans";color:var(--back);letter-spacing:.06em;padding-top:2px}
+.f span{color:var(--ink)}
+.f.miss span{color:#7a7f72;font-style:italic}
+section.chat{padding:26px 40px;overflow:hidden;display:flex;flex-direction:column;gap:18px}
+.q{align-self:flex-end;max-width:70%;background:var(--face);color:#f1f3ec;padding:12px 16px;font-size:16px}
+.ans{background:#f6f7f1;border:1px solid var(--rule);padding:22px 26px;position:relative}
+.ans h3{font:600 22px/1.25 "Source Serif 4",serif;margin-bottom:8px}
+.ans p,.ans li{font:400 17px/1.55 "Source Serif 4",serif;max-width:68ch}
+.ans ul{padding-left:20px;margin:8px 0 12px}
+.cite{font:600 12px "Public Sans";color:var(--trail);border-bottom:1.5px solid var(--trail);padding:0 1px;letter-spacing:.03em}
+table{border-collapse:collapse;margin:12px 0;font-size:14px}
+td,th{border-top:1px solid var(--rule);padding:6px 14px 6px 0;text-align:left}
+th{font:600 11px "Public Sans";letter-spacing:.1em;text-transform:uppercase;color:var(--back)}
+.ser{position:absolute;top:18px;right:22px;font:600 12px "Public Sans";letter-spacing:.16em;color:var(--red)}
+.ask{margin-top:auto;border:1.5px solid var(--face);background:#fbfbf7;padding:14px 16px;display:flex;justify-content:space-between;font-size:16px;color:#6b7064}
+.send{background:var(--face);color:#fff;padding:8px 18px;font-weight:600}
+aside.ev{border-right:0;border-left:1px solid var(--rule);background:var(--paper2)}
+.rose{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.rose p{font-size:13px;line-height:1.45}
+.call{border-top:1px solid var(--rule);padding:10px 0;font-size:13px}
+.call code{font:600 13px "Public Sans";color:var(--trail)}
+.call em{display:block;font-style:normal;color:#5b6155;margin-top:2px}
+.rule{display:grid;grid-template-columns:64px 1fr;gap:8px;border-top:1px solid var(--rule);padding:8px 0;font-size:13px}
+.rule b{color:var(--trail);font-size:12px}
+.disc{font-size:12px;color:#5b6155;border-top:1px solid var(--rule);padding-top:10px;margin-top:10px}
+</style></head><body>
+<header>
+<svg class="band" viewBox="0 0 1440 72" preserveAspectRatio="none"><g fill="none" stroke="#fff" stroke-width=".6">
+<path d="M0 36 Q 60 6 120 36 T 240 36 T 360 36 T 480 36 T 600 36 T 720 36 T 840 36 T 960 36 T 1080 36 T 1200 36 T 1320 36 T 1440 36"/>
+<path d="M0 36 Q 60 66 120 36 T 240 36 T 360 36 T 480 36 T 600 36 T 720 36 T 840 36 T 960 36 T 1080 36 T 1200 36 T 1320 36 T 1440 36"/>
+<path d="M0 30 Q 30 10 60 30 T 120 30 T 180 30 T 240 30 T 300 30 T 360 30 T 420 30 T 480 30 T 540 30 T 600 30 T 660 30 T 720 30 T 780 30 T 840 30 T 900 30 T 960 30 T 1020 30 T 1080 30 T 1140 30 T 1200 30 T 1260 30 T 1320 30 T 1380 30 T 1440 30"/>
+<path d="M0 42 Q 30 62 60 42 T 120 42 T 180 42 T 240 42 T 300 42 T 360 42 T 420 42 T 480 42 T 540 42 T 600 42 T 660 42 T 720 42 T 780 42 T 840 42 T 900 42 T 960 42 T 1020 42 T 1080 42 T 1140 42 T 1200 42 T 1260 42 T 1320 42 T 1380 42 T 1440 42"/></g></svg>
+<div class="mark">ALEX<small>INVESTING EDUCATION · NOT ADVICE</small></div>
+<div class="status"><span><i class="dot"></i>Market data connected · 4 tools</span><span>Knowledge base · 52 rules · 11 playbooks</span><span>gemini-3.8-flash</span></div>
+<div class="serialh">SESSION A 0003</div>
+</header>
+<main>
+<aside>
+<h2>Whose situation</h2>
+<div class="chips"><span class="chip">New grad</span><span class="chip">Mid-career family</span><span class="chip on">Tech worker, RSUs</span><span class="chip">Pre-retiree</span></div>
+<h2>Profile</h2>
+<div class="f"><b>PS-001</b><span>Age 31</span></div>
+<div class="f"><b>PS-007</b><span>Software engineer at NVIDIA</span></div>
+<div class="f"><b>PS-005</b><span>$210,000 base + ~$150,000/yr RSUs</span></div>
+<div class="f"><b>PS-009</b><span>$6,000 / month essentials</span></div>
+<div class="f"><b>PS-010</b><span>$25,000 cash</span></div>
+<div class="f"><b>PS-017</b><span>NVDA $420,000 · 401(k) $95,000 S&amp;P 500</span></div>
+<div class="f"><b>PS-022</b><span>Home in 2–3 yrs · independence by 50</span></div>
+<div class="f"><b>PS-025</b><span>High risk tolerance</span></div>
+<div class="f miss"><b>PS-024</b><span>Down payment amount unknown</span></div>
+<div class="f miss"><b>PS-021</b><span>Insurance unknown</span></div>
+</aside>
+<section class="chat">
+<div class="q">Am I too concentrated in NVDA? How does it compare to my S&amp;P 500 fund?</div>
+<div class="ans"><span class="ser">A 0003 · DATA 2026-10-09 16:00 ET</span>
+<h3>Yes — about 78% of your liquid assets sit in one stock</h3>
+<p>Guidelines cap any single self-selected stock near 5% of an investable portfolio <span class="cite">R-039</span>, and your paycheck and unvested RSUs already ride on the same company <span class="cite">R-027</span> <span class="cite">PB-007</span>.</p>
+<table><tr><th>Field</th><th>NVDA</th><th>VOO</th></tr>
+<tr><td>Price, last close</td><td>$229.28</td><td>$715.59</td></tr>
+<tr><td>Beta</td><td>2.22</td><td>1.00</td></tr>
+<tr><td>Expense ratio</td><td>n/a</td><td>0.03%</td></tr>
+<tr><td>NVDA weight</td><td>100%</td><td>8.08%</td></tr></table>
+<p>Your index fund holds NVDA too, so the overlap adds about $7,700 of the same exposure.</p>
+</div>
+<div class="ask"><span>Ask a follow-up…</span><span class="send">Ask Alex</span></div>
+</section>
+<aside class="ev">
+<h2>Evidence for A 0003</h2>
+<div class="rose"><svg width="96" height="96" viewBox="-50 -50 100 100"><g fill="none" stroke="#1f3a2e" stroke-width=".7">
+<circle r="46"/><circle r="40"/>
+<path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(0)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(45)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(90)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(135)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(180)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(225)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(270)"/><path d="M0-38C14-30 14-14 0-8C-14-14-14-30 0-38Z" transform="rotate(315)"/></g>
+<g fill="none" stroke="#8a5a00" stroke-width="1.4"><circle r="22"/><circle r="16"/><circle r="10"/></g></svg>
+<p><b>3 market calls · 6 rules cited</b><br>Each outer petal is a rule; each inner ring is a tool call.</p></div>
+<div class="call"><code>get_quotes</code> NVDA, VOO<em>Yahoo Finance, delayed · 16:00 ET</em></div>
+<div class="call"><code>get_fund_info</code> VOO<em>Expense ratio, top 10 holdings</em></div>
+<div class="call"><code>get_news</code> “NVDA”, 3 headlines<em>Context only, not a trade signal</em></div>
+<div class="rule"><b>R-039</b><span>Cap a single self-selected stock near 5% of investable assets</span></div>
+<div class="rule"><b>R-027</b><span>Human capital correlated with holdings lowers risk capacity</span></div>
+<div class="rule"><b>PB-007</b><span>Technology worker with RSUs or ESPP shares</span></div>
+<div class="disc">General educational information, not individualized advice. Market data can be delayed.</div>
+</aside>
+</main>
+</body></html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#f3f5f8;color:#0f1b2d;font:15px/1.5 "Public Sans",sans-serif}
+header{height:64px;background:#fff;border-bottom:1px solid #e3e8ef;display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+header b{font-size:20px}
+header span{font-size:13px;color:#4b5868}
+main{display:grid;grid-template-columns:340px 1fr;height:836px}
+aside{background:#fff;border-right:1px solid #e3e8ef;padding:22px}
+h2{font-size:14px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{border:1px solid #d5dce6;border-radius:99px;padding:5px 12px;font-size:13px}
+.chip.on{border-color:#2563eb;color:#2563eb;background:#eef3fe}
+label{display:block;font-size:12px;color:#4b5868;margin:10px 0 4px}
+.in{border:1px solid #d5dce6;border-radius:8px;padding:8px 10px;font-size:14px}
+.chat{padding:28px 48px;display:flex;flex-direction:column;gap:16px}
+.q{align-self:flex-end;background:#2563eb;color:#fff;border-radius:14px;padding:12px 16px;max-width:60%}
+.a{background:#fff;border:1px solid #e3e8ef;border-radius:14px;padding:22px 26px;max-width:860px}
+.a h3{font-size:20px;margin-bottom:8px}
+.a p{max-width:70ch;margin-bottom:10px;font-size:16px}
+table{border-collapse:collapse;margin:8px 0 12px}
+td,th{border-bottom:1px solid #e3e8ef;padding:7px 16px 7px 0;text-align:left;font-size:14px}
+.tools{border-top:1px dashed #d5dce6;padding-top:10px;font-size:13px;color:#4b5868}
+.tools span{background:#f3f5f8;border-radius:6px;padding:3px 8px;margin-right:6px;font-family:monospace}
+.ask{margin-top:auto;background:#fff;border:1px solid #d5dce6;border-radius:12px;padding:14px;display:flex;justify-content:space-between;color:#7a8696}
+.ask b{background:#2563eb;color:#fff;border-radius:8px;padding:6px 16px}
+</style></head><body>
+<header><b>Alex</b><span>gemini-3.8-flash · 4 market tools connected</span></header>
+<main>
+<aside><h2>Profile</h2>
+<div class="chips"><span class="chip">New grad</span><span class="chip">Mid-career</span><span class="chip on">Tech, RSUs</span><span class="chip">Pre-retiree</span></div>
+<label>Age</label><div class="in">31</div><label>Occupation</label><div class="in">Software engineer at NVIDIA</div>
+<label>Income</label><div class="in">$210,000 + RSUs</div><label>Cash reserves</label><div class="in">$25,000</div>
+<label>Current assets</label><div class="in">NVDA $420,000; 401(k) $95,000</div><label>Goals</label><div class="in">Home in 2–3 years</div></aside>
+<section class="chat">
+<div class="q">Am I too concentrated in NVDA? How does it compare to my S&amp;P 500 fund?</div>
+<div class="a"><h3>Yes, you're highly concentrated</h3>
+<p>About 78% of your liquid assets are in NVDA. Guidelines cap a single stock near 5% (R-039), and your income depends on the same company (R-027).</p>
+<table><tr><th>Field</th><th>NVDA</th><th>VOO</th></tr><tr><td>Price</td><td>$229.28</td><td>$715.59</td></tr><tr><td>Beta</td><td>2.22</td><td>1.00</td></tr><tr><td>Expense ratio</td><td>n/a</td><td>0.03%</td></tr></table>
+<div class="tools"><span>get_quotes</span><span>get_fund_info</span><span>get_news</span> 23.8s</div></div>
+<div class="ask"><span>Ask a question…</span><b>Send</b></div>
+</section></main>
+</body></html>

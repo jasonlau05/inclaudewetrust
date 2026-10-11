@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--red:#c8102e;--tint:#f4e3e5;--rule:#c8102e}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#fff;color:var(--ink);font:15px/1.45 "Libre Franklin",sans-serif;font-variant-numeric:tabular-nums}
+header{display:grid;grid-template-columns:200px 1fr 260px;border-bottom:3px solid var(--ink);height:84px}
+.form{border-right:1px solid var(--ink);padding:12px 18px}
+.form b{display:block;font:800 34px/1 "Libre Franklin"}
+.form small{font-size:11px}
+.title{padding:14px 22px}
+.title h1{font:800 26px/1.1 "Libre Franklin"}
+.title p{font-size:13px}
+.omb{border-left:1px solid var(--ink);padding:14px 18px;font-size:12px}
+.omb b{font-size:20px;display:block}
+main{display:grid;grid-template-columns:420px 1fr;height:816px}
+.lines{border-right:2px solid var(--ink);overflow:hidden}
+.sec{background:var(--ink);color:#fff;font:800 13px "Libre Franklin";padding:6px 14px;letter-spacing:.04em}
+.ln{display:grid;grid-template-columns:58px 1fr 150px;border-bottom:1px solid var(--rule);min-height:40px}
+.ln b{font:800 12px "Libre Franklin";padding:11px 8px;border-right:1px solid var(--rule);color:var(--red)}
+.ln span{padding:11px 10px;font-size:13px}
+.ln i{font-style:normal;background:var(--tint);border-left:1px solid var(--rule);padding:11px 10px;font-weight:600;font-size:13px}
+.ln.miss i{background:#fff;color:var(--red)}
+.sched{padding:22px 36px;overflow:hidden}
+.sched .hd{display:flex;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:16px}
+.sched .hd b{font:800 22px "Libre Franklin"}
+.q{border:1px solid var(--rule);background:var(--tint);padding:12px 16px;margin-bottom:16px;font-weight:600}
+h3{font:600 22px "Source Serif 4",serif;margin:6px 0}
+p{font:400 17px/1.55 "Source Serif 4",serif;max-width:70ch;margin-bottom:10px}
+.c{font:800 11px "Libre Franklin";color:var(--red);border:1px solid var(--red);padding:1px 4px}
+table{border-collapse:collapse;width:640px;margin:10px 0 14px}
+td,th{border:1px solid var(--rule);padding:7px 10px;text-align:left;font-size:14px}
+th{background:var(--tint);font-weight:800;font-size:12px}
+.att{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink);margin-top:14px}
+.att div{padding:10px 12px;border-right:1px solid var(--ink);font-size:13px}
+.att div:last-child{border:0}
+.att b{display:block;font-size:11px;color:var(--red)}
+.ask{position:absolute;left:456px;right:36px;bottom:24px;border:2px solid var(--ink);padding:14px;display:flex;justify-content:space-between;font-weight:600}
+.ask span:last-child{background:var(--ink);color:#fff;padding:4px 14px}
+</style></head><body>
+<header><div class="form"><b>ALEX</b><small>Form 2026 · education only</small></div>
+<div class="title"><h1>Your Investing Situation</h1><p>Lines marked with a code map to the knowledge base profile schema. Blank lines are unknown.</p></div>
+<div class="omb">Schedule <b>A-3</b>Market data attached</div></header>
+<main>
+<div class="lines">
+<div class="sec">Part I · Who you are</div>
+<div class="ln"><b>PS-001</b><span>Age</span><i>31</i></div>
+<div class="ln"><b>PS-007</b><span>Occupation</span><i>Engineer, NVIDIA</i></div>
+<div class="ln"><b>PS-005</b><span>Income</span><i>$210k + $150k RSU</i></div>
+<div class="sec">Part II · What you have</div>
+<div class="ln"><b>PS-010</b><span>Cash reserves</span><i>$25,000</i></div>
+<div class="ln"><b>PS-017</b><span>NVDA shares</span><i>$420,000</i></div>
+<div class="ln"><b>PS-017</b><span>401(k) S&amp;P 500</span><i>$95,000</i></div>
+<div class="ln"><b>PS-011</b><span>Debts</span><i>None</i></div>
+<div class="sec">Part III · What you want</div>
+<div class="ln"><b>PS-022</b><span>Goals</span><i>Home in 2–3 yrs</i></div>
+<div class="ln"><b>PS-025</b><span>Risk tolerance</span><i>High</i></div>
+<div class="ln miss"><b>PS-024</b><span>Down payment</span><i>Unknown</i></div>
+<div class="ln miss"><b>PS-021</b><span>Insurance</span><i>Unknown</i></div>
+</div>
+<div class="sched">
+<div class="hd"><b>Schedule A-3 · Concentration</b><span>Data as of 2026-10-09 16:00 ET</span></div>
+<div class="q">Line 1 · Am I too concentrated in NVDA? How does it compare to my S&amp;P 500 fund?</div>
+<h3>Yes — about 78% of your liquid assets are one stock.</h3>
+<p>Guidelines cap any single self-selected stock near 5% <span class="c">R-039</span>, and your paycheck rides on the same company <span class="c">R-027</span> <span class="c">PB-007</span>.</p>
+<table><tr><th>Field</th><th>NVDA</th><th>VOO</th></tr><tr><td>Price, last close</td><td>$229.28</td><td>$715.59</td></tr><tr><td>Beta</td><td>2.22</td><td>1.00</td></tr><tr><td>Expense ratio</td><td>n/a</td><td>0.03%</td></tr></table>
+<div class="att"><div><b>ATTACHMENT 1</b>get_quotes NVDA, VOO</div><div><b>ATTACHMENT 2</b>get_fund_info VOO</div><div><b>ATTACHMENT 3</b>get_news NVDA</div></div>
+</div>
+</main>
+<div class="ask"><span>Line 2 · Ask a follow-up…</span><span>File question</span></div>
+</body></html>
