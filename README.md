@@ -104,8 +104,3 @@ uv run ruff check . && uv run ruff format --check .
 - Latency is ~13–25s per answer, mostly Gemini writing a long templated response. Streaming would
   make it feel much faster.
 
-## Not production-ready
-
-There's no auth, no persistence, and no streaming. The KB README warns that personalized output
-can count as investment advice under the Investment Advisers Act (see GR-001), so get securities
-counsel before launch.
