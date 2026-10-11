@@ -154,12 +154,26 @@ class Advisor:
         self.tools: list[dict[str, str]] = []
 
     async def start(self) -> None:
-        params = StdioServerParameters(command=sys.executable, args=["-m", "market_mcp.server"], cwd=str(ROOT))
+        env = os.environ.copy()
+        paths = [str(ROOT), *(path for path in sys.path if path)]
+        if env.get("PYTHONPATH"):
+            paths.append(env["PYTHONPATH"])
+        env["PYTHONPATH"] = os.pathsep.join(dict.fromkeys(paths))
+
+        params = StdioServerParameters(
+            command=sys.executable,
+            args=["-m", "market_mcp.server"],
+            cwd=str(ROOT),
+            env=env,
+        )
         read, write = await self._stack.enter_async_context(stdio_client(params))
         self.session = await self._stack.enter_async_context(SharedSession(read, write))
         await self.session.initialize()
         listed = await self.session.list_tools()
-        self.tools = [{"name": t.name, "description": t.description or ""} for t in listed.tools]
+        self.tools = [
+            {"name": t.name, "description": t.description or ""}
+            for t in listed.tools
+    ]
 
     async def stop(self) -> None:
         await self._stack.aclose()
