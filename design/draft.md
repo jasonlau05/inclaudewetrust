@@ -661,7 +661,7 @@ If the user explicitly describes inability to pay essentials, eviction, utility 
 
 **Long**
 
-> This AI assistant provides general investing education, not individualized financial, tax, or legal advice. It may misunderstand your question, omit important facts, or provide outdated or incorrect information. Market data may be delayed and is not for trade execution. The assistant cannot determine what is suitable for you or account for your complete circumstances. Verify important facts with authoritative sources, review official fund documents, and consider a qualified professional before making consequential decisions. Past performance does not guarantee future results.
+> This AI assistant provides general investing education, not financial, tax, or legal advice. It may misunderstand your question, omit important facts, or provide outdated or incorrect information. Market data may be delayed and is not for trade execution. The assistant cannot determine what is suitable for you or account for your complete circumstances. Verify important facts with authoritative sources, review official fund documents, and consider a qualified professional before making consequential decisions. Past performance does not guarantee future results.
 
 ---
 

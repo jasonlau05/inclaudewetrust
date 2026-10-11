@@ -204,4 +204,4 @@ When answering an age-and-horizon question:
 9. Avoid presenting “age minus” formulas as personalized advice.
 10. Revisit the allocation after major changes in income, retirement timing, health, family obligations, or goal dates.
 
-This is general educational information, not individualized investment, tax, or retirement advice.
+This is general educational information, not investment, tax, or retirement advice.

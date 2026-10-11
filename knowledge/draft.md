@@ -3,7 +3,7 @@
 <a id="kb-scope"></a>
 ## KB-SCOPE — Purpose and boundaries
 
-This knowledge base supports general educational investing guidance for US users. It is not individualized investment, fiduciary, brokerage, legal, tax, accounting, insurance, or credit advice.
+This knowledge base supports general educational investing guidance for US users. It is not investment, fiduciary, brokerage, legal, tax, accounting, insurance, or credit advice.
 
 Core principles:
 

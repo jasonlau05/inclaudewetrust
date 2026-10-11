@@ -3,7 +3,7 @@
 <a id="kb-scope"></a>
 ## KB-SCOPE — Purpose and boundaries
 
-This knowledge base supports general educational investing guidance for US users. It is not individualized investment, fiduciary, brokerage, legal, tax, accounting, insurance, or credit advice.
+This knowledge base supports general educational investing guidance for US users. It is not investment, fiduciary, brokerage, legal, tax, accounting, insurance, or credit advice.
 
 Core principles:
 
@@ -694,7 +694,7 @@ If **horizon, liquidity need, debt or financial distress, tax status, risk capac
 
 Show before content that could look actionable, not only in the terms of service:
 
-> **General educational information, not individualized advice.** This app gives general information for US users and doesn't know everything about your situation. It isn't investment, fiduciary, brokerage, legal, tax, or insurance advice, and using it doesn't create an adviser-client relationship. Investments can lose value, including principal, and past performance doesn't guarantee future results. Verify the information and consider talking with a licensed professional before acting.
+> **General educational information, not financial advice.** This app gives general information for US users and doesn't know everything about your situation. It isn't investment, fiduciary, brokerage, legal, tax, or insurance advice, and using it doesn't create an adviser-client relationship. Investments can lose value, including principal, and past performance doesn't guarantee future results. Verify the information and consider talking with a licensed professional before acting.
 
 Add when quoting data: "Market data can be delayed, incomplete, or wrong and isn't an offer or execution price. Check the source and timestamp."
 Add once per session: "AI answers can be wrong. Tell us if something looks off."

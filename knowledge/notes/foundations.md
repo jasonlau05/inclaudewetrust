@@ -1,6 +1,6 @@
 # Foundations before investing beyond the employer match
 
-This is a prioritization framework, not individualized financial advice. The correct order can change with the interest rate and terms of debt, job stability, dependents, health, tax bracket, employer-plan rules, and whether the investor is pursuing loan forgiveness. Recheck current federal rules and the plan/loan documents before acting.
+This is a prioritization framework, not financial advice. The correct order can change with the interest rate and terms of debt, job stability, dependents, health, tax bracket, employer-plan rules, and whether the investor is pursuing loan forgiveness. Recheck current federal rules and the plan/loan documents before acting.
 
 ## A practical sequence
 

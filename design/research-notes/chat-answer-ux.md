@@ -150,7 +150,7 @@ Keep errors in the affected assistant turn, preserve the user’s message, and o
 A disclaimer should be visible but not repeated as a wall of text in every message:
 
 - **Short:** “Educational information only—not financial, tax, or legal advice. Investing involves risk, including possible loss. Check current sources and consider a qualified professional for decisions about your situation.”
-- **Long / first run:** “This assistant provides general investing education, not individualized financial, tax, or legal advice. It may make mistakes and market data may be delayed. It does not know everything about your circumstances. Verify important facts with authoritative sources, review a fund’s official documents, and consider a qualified professional before acting. Never invest money you may need soon, and remember that past performance does not guarantee future results.”
+- **Long / first run:** “This assistant provides general investing education, not financial, tax, or legal advice. It may make mistakes and market data may be delayed. It does not know everything about your circumstances. Verify important facts with authoritative sources, review a fund’s official documents, and consider a qualified professional before acting. Never invest money you may need soon, and remember that past performance does not guarantee future results.”
 
 The SEC’s investor education material supports explicitly discussing risk, fees, diversification, liquidity, and the fact that products should be evaluated against goals, horizon, and risk tolerance: https://www.investor.gov/investor-tools/investing-basics/investment-products .
 
